@@ -84,10 +84,6 @@ ul {
   list-style-type: none;
 }
 
-a {
-  text-decoration: none;
-}
-
 button {
   cursor: pointer;
 }
@@ -144,6 +140,7 @@ button {
   padding: 0.8em 1.4em;
   font-weight: 500;
   font-size: 0.9rem;
+  text-decoration: none !important;
   text-transform: lowercase;
   transition: transform 0.2s ease-in-out;
 }
@@ -271,6 +268,7 @@ main {
 .about__desc,
 .about__contact {
   margin-top: 2.4em;
+  text-align: justify;
 }
 
 .about .link--icon {
@@ -334,6 +332,7 @@ main {
 
 .skills__list-item {
   margin: 0.5em;
+  text-align: center;
 }
 
 .contact {
