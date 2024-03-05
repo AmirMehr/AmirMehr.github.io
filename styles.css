@@ -26,6 +26,13 @@ body {
   background-color: var(--clr-bg);
 }
 
+a {
+  text-decoration: none;
+}
+
+h3 a {
+  text-decoration: underline;
+}
 .light {
   --clr-bg: #fcfcfc;
   --clr-bg-alt: #fff;
