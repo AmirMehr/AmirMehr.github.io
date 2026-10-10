@@ -1,0 +1,949 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Amir Mehrnam — Full-stack software engineer with 14+ years of experience. End-to-end ownership: requirements, architecture, database design, implementation, integrations, deployment and maintenance."
+    />
+    <meta name="theme-color" content="#07080c" />
+    <link rel="icon" type="image/x-icon" href="logo.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@300;400;500&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ✅ Add this -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css?v=2" />
+    <title>Amir Mehrnam — Full-Stack Software Engineer</title>
+  </head>
+
+  <body id="top">
+    <!-- ============ ambient layers ============ -->
+    <div class="grain" aria-hidden="true"></div>
+    <div class="progress" aria-hidden="true">
+      <span id="progressBar"></span>
+    </div>
+    <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+    <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+    <!-- ============ nav ============ -->
+    <header class="nav" id="nav">
+      <a href="#top" class="nav__brand" data-cursor="link">
+        Amir<span>Mehrnam</span>
+      </a>
+
+      <nav class="nav__links" id="navLinks">
+        <a href="#work" data-cursor="link">Work</a>
+        <a href="#approach" data-cursor="link">Approach</a>
+        <a href="#skills" data-cursor="link">Skills</a>
+        <a href="#experience" data-cursor="link">Experience</a>
+        <a href="#contact" data-cursor="link">Contact</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="icon-btn" id="themeBtn" aria-label="Toggle colour theme">
+          <i class="fas fa-sun" aria-hidden="true"></i>
+        </button>
+        <button
+          class="icon-btn nav__burger"
+          id="burger"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- ============================================================
+           HERO
+      ============================================================= -->
+      <section class="hero">
+        <div class="hero__bg" aria-hidden="true">
+          <div class="hero__grid" data-parallax="0.05"></div>
+          <div class="orb orb--a" data-parallax="0.16"></div>
+          <div class="orb orb--b" data-parallax="-0.10"></div>
+          <div class="orb orb--c" data-parallax="0.22"></div>
+          <div class="hero__scan"></div>
+        </div>
+
+        <div class="hero__inner">
+          <p class="eyebrow hero__eyebrow">
+            <span class="pulse"></span>
+            Open to relocation · Hybrid / On-site / Remote
+          </p>
+
+          <h1 class="hero__title">
+            <span class="line"
+              ><span class="line__in">I take software from</span></span
+            >
+            <span class="line"
+              ><span class="line__in"><em>unclear requirements</em></span></span
+            >
+            <span class="line"
+              ><span class="line__in">to <em>production</em>.</span></span
+            >
+          </h1>
+
+          <p class="hero__lead">
+            Full-stack software engineer, 14+ years in. Web, backend, mobile, 3D
+            and production systems — and, more often than not, the whole path in
+            between: understanding the real problem, designing the system and
+            database, building it, wiring up integrations, deploying it, and
+            keeping it alive afterwards.
+          </p>
+
+          <div class="hero__cta">
+            <a
+              href="#work"
+              class="btn btn--primary"
+              data-magnetic
+              data-cursor="link"
+            >
+              <span>See selected work</span>
+              <i class="fas fa-arrow-down" aria-hidden="true"></i>
+            </a>
+            <a
+              href="CV.pdf"
+              class="btn btn--ghost"
+              data-magnetic
+              data-cursor="link"
+            >
+              <span>Download CV</span>
+              <i
+                class="fas fa-arrow-up-right-from-square"
+                aria-hidden="true"
+              ></i>
+            </a>
+          </div>
+
+          <dl class="hero__meta">
+            <div>
+              <dt>Based in</dt>
+              <dd>Shiraz, Iran</dd>
+            </div>
+            <div>
+              <dt>Experience</dt>
+              <dd>14+ years · since 2012</dd>
+            </div>
+            <div>
+              <dt>Languages</dt>
+              <dd>Persian · English C1 · German A2 · Arabic A2</dd>
+            </div>
+          </dl>
+        </div>
+
+        <a href="#work" class="scroll-cue" aria-label="Scroll down">
+          <span class="scroll-cue__track"
+            ><span class="scroll-cue__thumb"></span
+          ></span>
+          <span class="scroll-cue__label">scroll</span>
+        </a>
+      </section>
+
+      <!-- ============================================================
+           MARQUEE
+      ============================================================= -->
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track" id="marqueeTrack">
+          <span>TypeScript</span><span class="dot">◆</span> <span>React</span
+          ><span class="dot">◆</span> <span>Laravel</span
+          ><span class="dot">◆</span> <span>Node.js</span
+          ><span class="dot">◆</span> <span>Kotlin</span
+          ><span class="dot">◆</span> <span>Swift</span
+          ><span class="dot">◆</span> <span>Babylon.js</span
+          ><span class="dot">◆</span> <span>MySQL</span
+          ><span class="dot">◆</span> <span>Linux VPS</span
+          ><span class="dot">◆</span> <span>Docker</span
+          ><span class="dot">◆</span> <span>React Native</span
+          ><span class="dot">◆</span> <span>Telegram Bots</span
+          ><span class="dot">◆</span> <span>Java</span
+          ><span class="dot">◆</span> <span>Next.js</span
+          ><span class="dot">◆</span>
+        </div>
+      </div>
+
+      <!-- ============================================================
+           ABOUT / NUMBERS
+      ============================================================= -->
+      <section class="section about" id="about">
+        <div class="about__grid">
+          <div class="about__text reveal">
+            <p class="eyebrow">01 — Profile</p>
+            <h2 class="h2">
+              The differentiator isn't a framework.
+              <em>It's owning the outcome.</em>
+            </h2>
+            <p>
+              I'm a full-stack software engineer with 14+ years of professional
+              experience since 2012, building web, backend, mobile and
+              specialised applications. Long-term freelance work has meant
+              direct communication with clients and stakeholders, independent
+              technical decisions, and responsibility for what happens
+              <em>after</em> release.
+            </p>
+            <p>
+              That has pushed me across a deliberately wide surface: a school's
+              changing financial rules, a laboratory's delivery workflow, a 3D
+              home-design tool, a real-time multiplayer game, a VPN product
+              spanning Android, web and a Telegram bot. Different technologies
+              every time — the constant is understanding the real-world problem
+              first, then turning it into working software.
+            </p>
+          </div>
+
+          <div class="about__stats reveal">
+            <div class="stat">
+              <span class="stat__num" data-count="14" data-suffix="+">0</span>
+              <span class="stat__label">Years shipping software</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num" data-count="9" data-suffix="">0</span>
+              <span class="stat__label">Named products delivered</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num" data-count="4" data-suffix="">0</span>
+              <span class="stat__label"
+                >Platforms: web · Android · iOS · Telegram</span
+              >
+            </div>
+            <div class="stat">
+              <span class="stat__num" data-count="30" data-suffix="+">0</span>
+              <span class="stat__label">Technologies in the toolbox</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           APPROACH — sticky end-to-end pipeline
+      ============================================================= -->
+      <section class="section approach" id="approach">
+        <div class="approach__grid">
+          <div class="approach__sticky">
+            <p class="eyebrow">02 — Approach</p>
+            <h2 class="h2">One person, <em>the whole lifecycle</em>.</h2>
+            <p class="approach__note">
+              Most of my projects didn't come with a spec. They came with a
+              problem and a deadline. This is the sequence I've run, end to end,
+              more times than I can count.
+            </p>
+            <div class="approach__progress" aria-hidden="true">
+              <span id="approachBar"></span>
+            </div>
+          </div>
+
+          <ol class="steps" id="steps">
+            <li class="step">
+              <span class="step__num">01</span>
+              <h3>Understand</h3>
+              <p>
+                Sit with the client or stakeholder, ask the uncomfortable
+                questions, and separate what they asked for from what they
+                actually need.
+              </p>
+            </li>
+            <li class="step">
+              <span class="step__num">02</span>
+              <h3>Design</h3>
+              <p>
+                Application architecture and database schema — shaped around
+                real workflows, and deliberately built to survive the rules
+                changing later.
+              </p>
+            </li>
+            <li class="step">
+              <span class="step__num">03</span>
+              <h3>Build</h3>
+              <p>
+                Frontend, backend and mobile. Full-stack implementation in
+                whatever language or framework the problem actually calls for.
+              </p>
+            </li>
+            <li class="step">
+              <span class="step__num">04</span>
+              <h3>Integrate</h3>
+              <p>
+                Payments, maps, Firebase, Telegram bots, mobile SDKs, real-time
+                transport — the messy external edge where most projects live or
+                die.
+              </p>
+            </li>
+            <li class="step">
+              <span class="step__num">05</span>
+              <h3>Deploy</h3>
+              <p>
+                Shipping to production on shared hosting and self-managed Linux
+                VPS infrastructure: Caddy, SSL/TLS, DNS, Cloudflare CDN, Docker,
+                CI/CD.
+              </p>
+            </li>
+            <li class="step">
+              <span class="step__num">06</span>
+              <h3>Maintain</h3>
+              <p>
+                Debugging live systems, evolving the production schema, and
+                adapting to requirements that only became visible after real
+                users touched the thing.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           ENGINEERING CHALLENGES
+      ============================================================= -->
+      <section class="section challenges">
+        <div class="section__head reveal">
+          <p class="eyebrow">03 — What that looks like in practice</p>
+          <h2 class="h2">Engineering challenges I've actually handled</h2>
+        </div>
+
+        <div class="challenge-grid">
+          <article class="challenge reveal" data-tilt>
+            <div class="challenge__icon">
+              <i class="fas fa-diagram-project"></i>
+            </div>
+            <h3>Evolving business rules</h3>
+            <p>
+              Translated changing school administration and financial
+              requirements into application logic — and adapted a live database
+              schema as workflows changed underneath it.
+            </p>
+          </article>
+
+          <article class="challenge reveal" data-tilt>
+            <div class="challenge__icon"><i class="fas fa-server"></i></div>
+            <h3>Owning production</h3>
+            <p>
+              Deployed, debugged and maintained live applications across shared
+              hosting and self-managed Linux VPS environments — not just handed
+              over a repository.
+            </p>
+          </article>
+
+          <article class="challenge reveal" data-tilt>
+            <div class="challenge__icon"><i class="fas fa-cubes"></i></div>
+            <h3>Specialised products</h3>
+            <p>
+              Delivered 3D web design, real-time multiplayer, maps, games,
+              mobile apps, payment flows, Telegram automation and other
+              decidedly non-standard requirements.
+            </p>
+          </article>
+
+          <article class="challenge reveal" data-tilt>
+            <div class="challenge__icon"><i class="fas fa-comments"></i></div>
+            <h3>Client-led delivery</h3>
+            <p>
+              Worked directly with clients and stakeholders to clarify
+              incomplete requirements, make technical trade-offs, and carry
+              changes all the way through to production.
+            </p>
+          </article>
+
+          <article class="challenge reveal" data-tilt>
+            <div class="challenge__icon"><i class="fas fa-bolt"></i></div>
+            <h3>Learning by solving</h3>
+            <p>
+              Repeatedly adopted unfamiliar languages, frameworks and platforms
+              when the project required a practical solution — and put them into
+              production.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           SKILLS
+      ============================================================= -->
+      <section class="section skills" id="skills">
+        <div class="section__head reveal">
+          <p class="eyebrow">04 — Toolbox</p>
+          <h2 class="h2">Technical skills</h2>
+        </div>
+
+        <div class="skills__table reveal">
+          <div class="skill-row">
+            <span class="skill-row__area">Languages</span>
+            <div class="skill-row__chips">
+              <span class="chip">TypeScript</span
+              ><span class="chip">JavaScript</span> <span class="chip">PHP</span
+              ><span class="chip">Java</span> <span class="chip">Kotlin</span
+              ><span class="chip">Swift</span>
+              <span class="chip">C#</span>
+              <span class="chip chip--soft">Python</span>
+              <span class="chip chip--soft">Rust</span>
+            </div>
+          </div>
+
+          <div class="skill-row">
+            <span class="skill-row__area">Frontend &amp; cross-platform</span>
+            <div class="skill-row__chips">
+              <span class="chip">React</span><span class="chip">Redux</span>
+              <span class="chip">MUI</span><span class="chip">Next.js</span>
+              <span class="chip">Vue</span
+              ><span class="chip">React Native</span>
+              <span class="chip">WebGL / Babylon.js</span>
+              <span class="chip chip--soft">Angular</span>
+            </div>
+          </div>
+
+          <div class="skill-row">
+            <span class="skill-row__area">Backend &amp; APIs</span>
+            <div class="skill-row__chips">
+              <span class="chip">Laravel</span><span class="chip">Node.js</span>
+              <span class="chip">Express</span><span class="chip">REST</span>
+              <span class="chip">Third-party integrations</span>
+              <span class="chip chip--soft">NestJS</span>
+              <span class="chip chip--soft">GraphQL</span>
+              <span class="chip chip--soft">Django</span>
+              <span class="chip chip--soft">Spring Boot</span>
+            </div>
+          </div>
+
+          <div class="skill-row">
+            <span class="skill-row__area">Mobile &amp; 3D</span>
+            <div class="skill-row__chips">
+              <span class="chip">Android · Java</span
+              ><span class="chip">Kotlin</span>
+              <span class="chip">iOS · Swift</span
+              ><span class="chip">Babylon.js / WebGL</span>
+              <span class="chip chip--soft">Unity</span>
+              <span class="chip chip--soft">React Native</span>
+            </div>
+          </div>
+
+          <div class="skill-row">
+            <span class="skill-row__area">Data</span>
+            <div class="skill-row__chips">
+              <span class="chip">MySQL</span><span class="chip">MongoDB</span>
+              <span class="chip">SQLite</span>
+              <span class="chip chip--soft">PostgreSQL</span>
+            </div>
+          </div>
+
+          <div class="skill-row">
+            <span class="skill-row__area">Infrastructure delivery</span>
+            <div class="skill-row__chips">
+              <span class="chip">Linux</span
+              ><span class="chip">VPS administration</span>
+              <span class="chip">Caddy</span><span class="chip">SSL/TLS</span>
+              <span class="chip">DNS</span
+              ><span class="chip">Cloudflare CDN</span>
+              <span class="chip">Docker</span><span class="chip">CI/CD</span>
+            </div>
+          </div>
+
+          <div class="skill-row">
+            <span class="skill-row__area">Integrations</span>
+            <div class="skill-row__chips">
+              <span class="chip">Google Maps</span
+              ><span class="chip">Leaflet</span>
+              <span class="chip">Firebase</span
+              ><span class="chip">Telegram bots</span>
+              <span class="chip">Payment integrations</span>
+              <span class="chip">Mobile integrations</span>
+              <span class="chip">Real-time applications</span>
+              <span class="chip">Google Play Games</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="straight-talk reveal">
+          <div class="straight-talk__mark">
+            <i class="fas fa-quote-left"></i>
+          </div>
+          <p>
+            <strong>Straight talk on cloud:</strong> most of my production
+            experience is on shared hosting and self-managed Linux VPS
+            infrastructure rather than AWS, GCP or Azure production
+            environments. I'd rather say that plainly than overstate it. What I
+            can back up is that I learn unfamiliar technologies quickly and have
+            repeatedly put brand-new stacks into production when a project
+            demanded it.
+          </p>
+        </aside>
+      </section>
+
+      <!-- ============================================================
+           WORK
+      ============================================================= -->
+      <section class="section work" id="work">
+        <div class="section__head reveal">
+          <p class="eyebrow">05 — Selected work</p>
+          <h2 class="h2">Projects</h2>
+          <p class="section__sub">
+            A few things worth looking at. Nine products are listed in total
+            across this page and my CV.
+          </p>
+        </div>
+
+        <div class="projects">
+          <!-- 1 -->
+          <article class="project reveal" data-tilt>
+            <div class="project__glow" aria-hidden="true"></div>
+            <header class="project__head">
+              <span class="project__index">01</span>
+              <div class="project__links">
+                <a
+                  href="https://daneshmobin.ir/"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Live site"
+                  data-cursor="link"
+                >
+                  <i class="fas fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </header>
+            <h3 class="project__title">
+              <a
+                href="https://daneshmobin.ir/"
+                target="_blank"
+                rel="noopener"
+                data-cursor="link"
+                >DaneshMobin</a
+              >
+            </h3>
+            <p class="project__role">
+              School management &amp; financial system · Full-stack, Web
+            </p>
+            <p class="project__desc">
+              Every process of a school in one system: registration, events,
+              buffet, student tasks, online classrooms and online payments.
+            </p>
+            <ul class="project__points">
+              <li>
+                Translated changing administrative and financial rules into
+                application and database logic.
+              </li>
+              <li>
+                Evolved the live production schema as school workflows changed.
+              </li>
+            </ul>
+            <ul class="project__stack">
+              <li>React</li>
+              <li>Redux</li>
+              <li>MUI</li>
+              <li>PHP</li>
+              <li>MySQL</li>
+            </ul>
+          </article>
+
+          <!-- 2 -->
+          <article class="project reveal" data-tilt>
+            <div class="project__glow" aria-hidden="true"></div>
+            <header class="project__head">
+              <span class="project__index">02</span>
+              <div class="project__links">
+                <a
+                  href="https://nobelab.ir/"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Live site"
+                  data-cursor="link"
+                >
+                  <i class="fas fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </header>
+            <h3 class="project__title">
+              <a
+                href="https://nobelab.ir/"
+                target="_blank"
+                rel="noopener"
+                data-cursor="link"
+                >Nobel Lab</a
+              >
+            </h3>
+            <p class="project__role">
+              Laboratory delivery automation · Full-stack, Web
+            </p>
+            <p class="project__desc">
+              Converted a real operational delivery process for a laboratory
+              into maintainable software.
+            </p>
+            <ul class="project__points">
+              <li>
+                Reduced manual work and the opportunities for human error inside
+                the workflow.
+              </li>
+              <li>
+                Built around how the lab actually operated, not an idealised
+                version of it.
+              </li>
+            </ul>
+            <ul class="project__stack">
+              <li>React</li>
+              <li>Redux</li>
+              <li>MUI</li>
+              <li>PHP</li>
+              <li>MySQL</li>
+            </ul>
+          </article>
+
+          <!-- 3 -->
+          <article class="project reveal" data-tilt>
+            <div class="project__glow" aria-hidden="true"></div>
+            <header class="project__head">
+              <span class="project__index">03</span>
+              <div class="project__links">
+                <a
+                  href="https://hoobi.ir/home_design"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Live site"
+                  data-cursor="link"
+                >
+                  <i class="fas fa-arrow-up-right-from-square"></i>
+                </a>
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.mehrg.homedesign"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Android app"
+                  data-cursor="link"
+                >
+                  <i class="fab fa-google-play"></i>
+                </a>
+              </div>
+            </header>
+            <h3 class="project__title">
+              <a
+                href="https://hoobi.ir/home_design"
+                target="_blank"
+                rel="noopener"
+                data-cursor="link"
+                >Hoobi</a
+              >
+            </h3>
+            <p class="project__role">
+              3D home-design platform · Full-stack, Web · Android · PWA
+            </p>
+            <p class="project__desc">
+              A home-design tool for interior designers: designing a home inside
+              a real 3D space, in the browser.
+            </p>
+            <ul class="project__points">
+              <li>Built the 3D experience in the web with Babylon.js.</li>
+              <li>
+                Connected Android and web applications around the same product
+                workflow.
+              </li>
+            </ul>
+            <ul class="project__stack">
+              <li>Babylon.js</li>
+              <li>WebGL</li>
+              <li>PWA</li>
+              <li>Java / Android</li>
+            </ul>
+          </article>
+
+          <!-- 4 -->
+          <article class="project reveal" data-tilt>
+            <div class="project__glow" aria-hidden="true"></div>
+            <header class="project__head">
+              <span class="project__index">04</span>
+            </header>
+            <h3 class="project__title">OnSpeedVPN</h3>
+            <p class="project__role">
+              Product ecosystem · Web · Android · Telegram
+            </p>
+            <p class="project__desc">
+              One product across three surfaces — an Android application, a
+              website and a Telegram bot shop.
+            </p>
+            <ul class="project__points">
+              <li>
+                Integrated cryptocurrency and Perfect Money payment flows.
+              </li>
+              <li>Owned the full build across all three delivery channels.</li>
+            </ul>
+            <ul class="project__stack">
+              <li>Kotlin</li>
+              <li>PHP</li>
+              <li>Telegram Bot API</li>
+              <li>Crypto payments</li>
+            </ul>
+          </article>
+
+          <!-- 5 -->
+          <article class="project reveal" data-tilt>
+            <div class="project__glow" aria-hidden="true"></div>
+            <header class="project__head">
+              <span class="project__index">05</span>
+            </header>
+            <h3 class="project__title">TajallieNoor</h3>
+            <p class="project__role">Educational platform · Full-stack, Web</p>
+            <p class="project__desc">
+              An education platform for an institution: online classrooms, file
+              sharing and institutional workflows.
+            </p>
+            <ul class="project__points">
+              <li>
+                Owned the whole lifecycle — requirements, application and
+                database design, deployment and ongoing maintenance.
+              </li>
+            </ul>
+            <ul class="project__stack">
+              <li>Laravel</li>
+              <li>React</li>
+              <li>MySQL</li>
+            </ul>
+          </article>
+
+          <!-- 6 -->
+          <article class="project reveal" data-tilt>
+            <div class="project__glow" aria-hidden="true"></div>
+            <header class="project__head">
+              <span class="project__index">06</span>
+              <div class="project__links">
+                <a
+                  href="https://vitrinom.ir/"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Live site"
+                  data-cursor="link"
+                >
+                  <i class="fas fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </header>
+            <h3 class="project__title">
+              <a
+                href="https://vitrinom.ir/"
+                target="_blank"
+                rel="noopener"
+                data-cursor="link"
+                >Vitrinom</a
+              >
+            </h3>
+            <p class="project__role">Local discovery · Web · Android · PWA</p>
+            <p class="project__desc">
+              Information about shops around the city, on a map.
+            </p>
+            <ul class="project__points">
+              <li>Built on a self-created SPA framework.</li>
+              <li>Map layer delivered with Leaflet and Google Maps.</li>
+            </ul>
+            <ul class="project__stack">
+              <li>Custom SPA</li>
+              <li>Android</li>
+              <li>Leaflet</li>
+              <li>Google Maps</li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- additional work -->
+        <div class="additional reveal">
+          <h3 class="additional__title">Additional selected work</h3>
+          <ul class="additional__list">
+            <li>
+              <span class="additional__name">Beauty Bay</span>
+              <span class="additional__meta">iOS · Swift · reservations</span>
+            </li>
+            <li>
+              <span class="additional__name">Carbalad</span>
+              <span class="additional__meta"
+                >Android · Java · vehicle pricing + in-app purchases</span
+              >
+            </li>
+            <li>
+              <span class="additional__name">Bombay Game</span>
+              <span class="additional__meta"
+                >2D Android · real-time multiplayer · Bluetooth · Google Play
+                Games · published on Play Store</span
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           EXPERIENCE
+      ============================================================= -->
+      <section class="section experience" id="experience">
+        <div class="section__head reveal">
+          <p class="eyebrow">06 — Track record</p>
+          <h2 class="h2">Professional experience</h2>
+        </div>
+
+        <div class="timeline reveal">
+          <div class="timeline__marker" aria-hidden="true"></div>
+          <article class="timeline__item">
+            <div class="timeline__when">
+              <span class="timeline__period">2012 — Present</span>
+              <span class="timeline__place">Freelance · Shiraz, Iran</span>
+            </div>
+            <div class="timeline__what">
+              <h3>Freelance Software Engineer / Full-Stack Developer</h3>
+              <ul>
+                <li>
+                  <strong>End-to-end delivery —</strong> independently built and
+                  delivered business, educational, e-commerce, automation, 3D,
+                  mobile and game software, often owning projects from initial
+                  requirements through to production.
+                </li>
+                <li>
+                  <strong>Client and stakeholder work —</strong> worked directly
+                  with clients to clarify requirements, translate business needs
+                  into technical solutions, evaluate trade-offs and coordinate
+                  changes through delivery.
+                </li>
+                <li>
+                  <strong>Full-stack engineering —</strong> designed application
+                  architecture and databases; developed frontend, backend and
+                  mobile components; integrated third-party services; and
+                  maintained production systems.
+                </li>
+                <li>
+                  <strong>Production delivery —</strong> deployed and supported
+                  applications on shared hosting and self-managed Linux VPS
+                  infrastructure, including PHP, MySQL, phpMyAdmin, Caddy,
+                  SSL/TLS, DNS and Cloudflare CDN.
+                </li>
+                <li>
+                  <strong>Adaptability —</strong> repeatedly moved between
+                  languages, frameworks and platforms as project requirements
+                  changed, learning unfamiliar technologies through the
+                  underlying problem and practical implementation.
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <div class="edu-grid reveal">
+          <div class="edu-card">
+            <p class="eyebrow">Education</p>
+            <h3>Bachelor of Information Technology</h3>
+            <p class="edu-card__meta">
+              Kazeroun Salman Farsi University · 2009 — 2013
+            </p>
+          </div>
+          <div class="edu-card">
+            <p class="eyebrow">Languages</p>
+            <ul class="lang-list">
+              <li>
+                <span>Persian</span><span class="lang-list__level">Native</span>
+              </li>
+              <li>
+                <span>English</span><span class="lang-list__level">C1</span>
+              </li>
+              <li>
+                <span>German</span><span class="lang-list__level">A2</span>
+              </li>
+              <li>
+                <span>Arabic</span><span class="lang-list__level">A2</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           CONTACT
+      ============================================================= -->
+      <section class="section contact" id="contact">
+        <div class="contact__inner reveal">
+          <p class="eyebrow">07 — Contact</p>
+          <h2 class="contact__title">
+            Looking for someone who takes the problem
+            <em>all the way to production?</em>
+          </h2>
+          <p class="contact__lead">
+            I'm open to relocation and to hybrid, on-site or remote roles —
+            ideally somewhere that end-to-end ownership is genuinely useful to
+            the team.
+          </p>
+
+          <div class="contact__actions">
+            <a
+              href="mailto:m.amir.mehrnam@gmail.com"
+              class="btn btn--primary btn--lg"
+              data-magnetic
+              data-cursor="link"
+            >
+              <i class="fas fa-envelope" aria-hidden="true"></i>
+              <span>m.amir.mehrnam@gmail.com</span>
+            </a>
+            <a
+              href="tel:+989172534077"
+              class="btn btn--ghost btn--lg"
+              data-magnetic
+              data-cursor="link"
+            >
+              <i class="fas fa-phone" aria-hidden="true"></i>
+              <span>+98 917 253 4077</span>
+            </a>
+          </div>
+
+          <div class="contact__socials">
+            <a
+              href="https://github.com/AmirMehr"
+              target="_blank"
+              rel="noopener"
+              data-cursor="link"
+            >
+              <i class="fab fa-github" aria-hidden="true"></i
+              ><span>github.com/AmirMehr</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/amirmehrnam/"
+              target="_blank"
+              rel="noopener"
+              data-cursor="link"
+            >
+              <i class="fab fa-linkedin" aria-hidden="true"></i
+              ><span>in/amirmehrnam</span>
+            </a>
+            <a
+              href="https://stackoverflow.com/users/10810304/amir-mehrnam"
+              target="_blank"
+              rel="noopener"
+              data-cursor="link"
+            >
+              <i class="fab fa-stack-overflow" aria-hidden="true"></i
+              ><span>Stack Overflow</span>
+            </a>
+            <a href="CV.pdf" target="_blank" rel="noopener" data-cursor="link">
+              <i class="fas fa-file-lines" aria-hidden="true"></i
+              ><span>CV (PDF)</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact__marquee" aria-hidden="true">
+          <span>Let's build something that ships</span>
+          <span>Let's build something that ships</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <span>© <span id="year"></span> Amir Mehrnam</span>
+        <span class="footer__note"
+          >Shiraz, Iran · Available for relocation</span
+        >
+        <a href="#top" class="footer__top" data-cursor="link">
+          Back to top <i class="fas fa-arrow-up" aria-hidden="true"></i>
+        </a>
+      </div>
+    </footer>
+
+    <script src="./script.js?v=2"></script>
+  </body>
+</html>
